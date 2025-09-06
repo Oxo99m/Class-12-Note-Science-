@@ -1,0 +1,141 @@
+
+    <html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image ReSizer</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"></link>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+    <script>
+        (adsbygoogle = window.adsbygoogle || []).push({
+            google_ad_client: "ca-app-pub-2043920612740174/7744152900",
+            enable_page_level_ads: true
+        });
+    </script>
+</head>
+<body class="bg-gradient-to-r from-blue-100 to-purple-100 font-roboto">
+    <header class="bg-blue-600 text-white p-4 flex justify-between items-center">
+        <div class="flex items-center">
+            <img alt="Logo of Image ReSizer, a simple icon representing image resizing" class="mr-2" height="50" src="https://storage.googleapis.com/a1aa/image/HywC8GPZt8bWNFexN0H9jf9ThII48qiMLvXV1m4HsWvrDufnA.jpg" width="50"/>
+            <div class="text-xl font-bold">Image ReSizer</div>
+        </div>
+    </header>
+
+    <main class="max-w-4xl mx-auto p-6">
+        <div class="bg-white p-6 rounded-lg shadow-lg">
+            <div class="border-4 border-dotted border-gray-300 p-6 rounded-lg text-center relative bg-gradient-to-r from-green-100 to-blue-100">
+                <input type="file" id="fileInput" class="absolute inset-0 w-full h-full opacity-0 cursor-pointer">
+                <div id="uploadIcon" class="text-gray-400">
+                    <i class="fas fa-upload text-6xl"></i>
+                    <p class="mt-2">Click to upload an image</p>
+                </div>
+                <div id="loadingIcon" class="hidden text-gray-400">
+                    <i class="fas fa-spinner fa-spin text-6xl"></i>
+                    <p class="mt-2">Uploading...</p>
+                </div>
+                <img id="uploadedImage" src="" alt="Uploaded image preview" class="hidden w-full h-auto mt-4">
+            </div>
+            <div class="mt-4 flex justify-between items-center">
+                <div>
+                    <label for="fileSize" class="block text-gray-700">File Size:</label>
+                    <select id="fileSize" class="mt-1 block w-full border-gray-300 rounded-md shadow-sm">
+                        <option>50KB</option>
+                        <option>100KB</option>
+                        <option>200KB</option>
+                        <option>500KB</option>
+                        <option>1MB</option>
+                    </select>
+                </div>
+                <button id="downloadButton" class="bg-blue-600 text-white px-4 py-2 rounded-md shadow-md">
+                    <i class="fas fa-download"></i> Download
+                </button>
+            </div>
+        </div>
+
+        <section class="mt-8 bg-white p-6 rounded-lg shadow-lg">
+            <h2 class="text-2xl font-bold text-blue-600">About This Tool</h2>
+            <p class="mt-4 text-gray-700 bg-gradient-to-r from-yellow-100 to-red-100 p-4 rounded-lg">This tool allows you to resize images easily. You can upload an image, select the desired file size, and download the resized image. It's perfect for optimizing images for web use, saving storage space, and ensuring faster load times.</p>
+        </section>
+
+        <section class="mt-8 bg-white p-6 rounded-lg shadow-lg">
+            <h2 class="text-2xl font-bold text-blue-600">About Us</h2>
+            <p class="mt-4 text-gray-700 bg-gradient-to-r from-yellow-100 to-red-100 p-4 rounded-lg">We are a team of developers dedicated to creating useful tools for everyday tasks. Our goal is to make your life easier by providing simple and effective solutions.</p>
+        </section>
+
+        <section class="mt-8 bg-white p-6 rounded-lg shadow-lg">
+            <h2 class="text-2xl font-bold text-blue-600">Contact Us</h2>
+            <p class="mt-4 text-gray-700 bg-gradient-to-r from-yellow-100 to-red-100 p-4 rounded-lg">You can reach us through the following platforms:</p>
+            <div class="flex space-x-4 mt-4">
+                <a href="https://www.instagram.com/mangal._.7s/profilecard/?igsh=enQwdjRybXVuY3Bo" class="text-blue-600 text-2xl"><i class="fab fa-instagram"></i></a>
+                <a href="https://t.me/moneymaker0066" class="text-blue-600 text-2xl"><i class="fab fa-telegram"></i></a>
+                <a href="https://whatsapp.com/channel/0029VaG66lT0G0XrIPEabj0J" class="text-blue-600 text-2xl"><i class="fab fa-whatsapp"></i></a>
+            </div>
+        </section>
+
+        <section class="mt-8 bg-white p-6 rounded-lg shadow-lg">
+            <h2 class="text-2xl font-bold text-blue-600">Privacy Policy</h2>
+            <p class="mt-4 text-gray-700 bg-gradient-to-r from-yellow-100 to-red-100 p-4 rounded-lg">We value your privacy and are committed to protecting your personal information. Our privacy policy outlines how we collect, use, and safeguard your data.</p>
+        </section>
+
+        <section class="mt-8 bg-white p-6 rounded-lg shadow-lg">
+            <h2 class="text-2xl font-bold text-blue-600">Terms and Conditions</h2>
+            <p class="mt-4 text-gray-700 bg-gradient-to-r from-yellow-100 to-red-100 p-4 rounded-lg">By using this tool, you agree to our terms and conditions. Please read them carefully to understand your rights and responsibilities.</p>
+        </section>
+
+        <section class="mt-8 bg-white p-6 rounded-lg shadow-lg">
+            <h2 class="text-2xl font-bold text-blue-600">Keywords</h2>
+            <p class="mt-4 text-gray-700 bg-gradient-to-r from-yellow-100 to-red-100 p-4 rounded-lg">Image Resizer, Image Optimization, File Size Reduction, Image Compression, Online Image Resizer, Free Image Resizer, Resize Photos, Image Resizing Tool, Image Resizer for Web, Image Resizer for Social Media</p>
+        </section>
+
+        <section class="mt-8 bg-white p-6 rounded-lg shadow-lg">
+            <h2 class="text-2xl font-bold text-blue-600">Searchable Articles</h2>
+            <div class="mt-4 text-gray-700 bg-gradient-to-r from-yellow-100 to-red-100 p-4 rounded-lg">
+                <h3 class="text-xl font-bold">How to Resize Images for Web Use</h3>
+                <p class="mt-2">Resizing images for web use is crucial for optimizing load times and improving user experience. Learn how to resize your images effectively using our Image ReSizer tool.</p>
+            </div>
+            <div class="mt-4 text-gray-700 bg-gradient-to-r from-yellow-100 to-red-100 p-4 rounded-lg">
+                <h3 class="text-xl font-bold">The Importance of Image Optimization</h3>
+                <p class="mt-2">Image optimization is essential for reducing file sizes without compromising quality. Discover the benefits of optimizing your images and how our tool can help.</p>
+            </div>
+            <div class="mt-4 text-gray-700 bg-gradient-to-r from-yellow-100 to-red-100 p-4 rounded-lg">
+                <h3 class="text-xl font-bold">Top 5 Free Image Resizing Tools</h3>
+                <p class="mt-2">Explore the top 5 free image resizing tools available online, including our Image ReSizer, and find the best one for your needs.</p>
+            </div>
+        </section>
+
+        <footer class="mt-8 text-center text-gray-700">
+            <p>Developed by Manoj <i class="fas fa-heart text-red-600"></i></p>
+        </footer>
+    </main>
+
+    <script>
+        document.getElementById('fileInput').addEventListener('change', function(event) {
+            const file = event.target.files[0];
+            if (file) {
+                document.getElementById('uploadIcon').classList.add('hidden');
+                document.getElementById('loadingIcon').classList.remove('hidden');
+
+                const reader = new FileReader();
+                reader.onload = function(e) {
+                    document.getElementById('loadingIcon').classList.add('hidden');
+                    document.getElementById('uploadedImage').src = e.target.result;
+                    document.getElementById('uploadedImage').classList.remove('hidden');
+                };
+                reader.readAsDataURL(file);
+            }
+        });
+
+        document.getElementById('downloadButton').addEventListener('click', function() {
+            const link = document.createElement('a');
+            link.href = document.getElementById('uploadedImage').src;
+            link.download = 'resized-image.jpg';
+            link.click();
+        });
+    </script>
+</body>
+</html>
+    
+</body>
+</html>
